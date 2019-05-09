@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Instacram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+</head>
+<body>
+    <!-- This is an example app structure -->
+    <header class='banner'>
+        <h1>Instacram</h1>
+        <ul class='nav hide' id='nav'>
+            <li class="nav-item"><input id='file' type="file"/></li>
+            <li class="nav-item"><input id='caption' type="text" placeholder="Add caption here"/></li>
+            <li class="nav-item" id='follow'>Follow</li>
+            <li class="nav-item" id='unfollow'>Unfollow</li>
+            <li class="nav-item"><input id='followed' type="text" placeholder="Insert username here"/></li>
+            <li class='nav-item' id='profile'>Profile</li>
+            <li class='nav-item hide' id='tofeed'>Feed</button></li>
+        </ul>
+    </header>
+    <main role='main'>
+        <div id='login_form'>
+            <h5 id='form1'>username: <input id='username' type='text'> <button id='login' class='btn'>Login</button></h5>
+            <h5 id='form2'>password: <input id='password' type='password'> <button id='signup' class='btn'>Sign up</button></h5>
+        </div>
+        <div id='register_form' class='hide'>
+            <h5 id='form3'>username: <input id='newusername' type='text'>  <button id='create' class='btn'>Create account</button></h5>
+            <h5 id='form4'>name: <input id='newname' type='text'> <button id='back' class='btn'>Back</button></h5>
+            <h5 id='form5'>email: <input id='newemail' type='text'></h5>
+            <h5 id='form6'>password: <input id='newpassword' type='password'></h5>
+        </div>
+
+        <div id='user_profile' class='hide'>
+
+        </div>
+
+        <button id='logout' class='btn hide'>Logout</button>
+
+
+        <!-- app goes here -->
+        <div id='large-feed'>
+            <!-- inject feed data -->
+        </div>
+    </main>
+    <footer>
+        <p>Instacram example</p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
